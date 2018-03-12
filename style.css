@@ -1,4 +1,3 @@
-/* use style tags on hawk!!!  */
 .dflt-styles {
   text-align: center;
   /* base style needed in case slick doesn't load */
@@ -7,6 +6,8 @@
 
 .lp-facet-slider {
   min-width: 767px;
+  /* needed to place above product grid (4 divisions only) */
+  margin-left: 200px;
 }
 
 .dflt-styles a {
@@ -64,12 +65,18 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1019px) {
+
+  .lp-facet-slider {
+    /* only for sliders with 4 buttons */
+    margin-left: 185px;
+  }
   .cat-slide-btn {
     font-weight: bold;
     font-size: 12px;
     line-height: 10px;
-    max-width: 130px;
+    /* needed to center above product grid (4 divisions only) use 130px for 5 */
+    max-width: 123px;
     height: 50px;
     padding: 15px;
     border-radius: 5px;
