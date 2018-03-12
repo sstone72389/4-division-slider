@@ -1,0 +1,106 @@
+/* use style tags on hawk!!!  */
+.dflt-styles {
+  text-align: center;
+  /* base style needed in case slick doesn't load */
+  float: left;
+}
+
+.lp-facet-slider {
+  min-width: 767px;
+}
+
+.dflt-styles a {
+  margin: 0px 10px;
+  display: inline-block;
+}
+
+.cat-slide-btn.selected {
+  color: black;
+  background: white;
+  border: 3px #797979 solid;
+  padding: 2px;
+}
+
+.cat-slide-btn {
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background: black;
+  width: 180px;
+  height: 67px;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cat-slider-link {
+  padding-bottom: 26px;
+}
+
+.cat-slide-btn:hover {
+  color: lightgray;
+}
+
+.cat-slide-btn.selected:hover {
+  color: black;
+}
+
+.stick-desc {
+  font-size: 12px;
+  font-family: verdana;
+  max-width: 175px;
+}
+
+/* removes blue focus on all elements */
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width:1020px) {
+  .cat-slide-btn {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 10px;
+    max-width: 130px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .stick-desc {
+    font-size: 10px;
+    font-family: verdana;
+    max-width: 175px;
+  }
+  .cat-slide-btn:active {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .lp-facet-slider {
+    margin-left: -10px;
+  }
+  .cat-slide-btn {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 2px;
+    max-width: 120px;
+    border-radius: 5px;
+  }
+  .stick-desc {
+    font-size: 10px;
+    font-family: verdana;
+    max-width: 175px;
+  }
+  .cat-slide-btn:active {
+    padding: 17px;
+  }
+}
